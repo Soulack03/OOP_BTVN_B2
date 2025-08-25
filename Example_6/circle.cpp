@@ -3,9 +3,11 @@ using namespace std;
 
 // The Circle class represents a circle with a radius and color, and provides methods for input and calculations.
 class Circle {
- public:
-   double radius; // Stores the radius of the circle
+private:
+ double radius; // Stores the radius of the circle
    string color;  // Stores the color of the circle
+ public:
+   
 
    // Prompts the user to enter a valid (non-negative) radius for the circle.
    void enter_radius(){

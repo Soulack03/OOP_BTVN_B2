@@ -3,12 +3,14 @@ using namespace std;
 
 // The Person class represents a person with basic information and actions.
 class Person{
-public :
+private:
    string name;        // Stores the person's name
    int age;            // Stores the person's age
    string address;     // Stores the person's address
    string phoneNumber; // Stores the person's phone number
 
+public :
+  
    // Constructor: Initializes a Person object with the given name, age, address, and phone number.
    // Parameters:
    //   name - the person's name

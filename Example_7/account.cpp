@@ -3,11 +3,13 @@ using namespace std;
 
 // The Account class represents a simple bank account with basic operations and a minimum balance rule.
 class Account{
-public:
+private:
     string accountNumber; // Stores the account number
     double balance;       // Stores the current balance
     string ownerName;     // Stores the account owner's name
 
+public:
+    
     // Constructor: Initializes an Account object with account number, initial balance, and owner name.
     // Parameters:
     //   accountNumber - the account's unique identifier
