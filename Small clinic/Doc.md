@@ -159,6 +159,9 @@ The `main` function includes 10 test cases. Sample outputs demonstrate functiona
 
 These results validate entity management, polymorphic behavior, and data consistency.
 
+
+
+
 ## LLM Usage
 
 I wrote all the code myself, ensuring full understanding and personalization. ChatGPT was used solely to provide ideas, verify syntax, and suggest comments to improve code clarity. Specific interactions included:
@@ -167,18 +170,5 @@ I wrote all the code myself, ensuring full understanding and personalization. Ch
 - **Syntax Verification**: I used ChatGPT to confirm the correctness of C++ syntax, particularly for virtual functions and destructors. For example, I asked, "Is my virtual destructor in the Patient class correct?" ChatGPT verified the syntax and suggested adding it to ensure proper cleanup of derived classes, which I implemented.
 - **Code Comments**: I requested suggestions for clear and concise comments to enhance readability. ChatGPT provided examples of descriptive comments in Vietnamese, which I adapted to document each class and method, ensuring clarity for both myself and readers.
 
-**Example Prompts**:
-- "Suggest methods for an Appointment class in a clinic system." Response: Suggested `cancelAppointment`, `completeAppointment`, and `displayDetails`, which I customized.
-- "Check syntax for virtual functions in a Patient and ChronicPatient class." Response: Confirmed correct use of `virtual` and `override` keywords and recommended a virtual destructor.
-- "Provide examples of clear C++ code comments in Vietnamese." Response: Suggested comments like `// Tên bệnh nhân` and `// Thêm một bản ghi mới vào lịch sử khám bệnh`, which I incorporated.
 
-All implementations were my own, with ChatGPT serving as a tool for brainstorming and validation. No code was directly copied; I used its guidance to refine my design and ensure correctness. Full prompts and responses are in the Appendix.
 
-## Appendix: LLM Prompts and Responses
-
-- **Prompt 1**: "Suggest methods for an Appointment class in a clinic management system."
-  - **Response**: "An Appointment class could include methods like: `cancelAppointment()` to cancel an appointment, `completeAppointment()` to mark it as done, `updateStatus(string status)` to change status, and `displayDetails()` to show appointment info."
-- **Prompt 2**: "Check syntax for virtual functions in a Patient and ChronicPatient class."
-  - **Response**: "Your virtual function `virtual void scheduleAppointment(...)` in `Patient` is correct. Ensure you use `override` in `ChronicPatient` and include a virtual destructor `virtual ~Patient() {}` to handle cleanup of derived classes."
-- **Prompt 3**: "Provide examples of clear C++ code comments in Vietnamese."
-  - **Response**: "Use comments like: `// Tên bệnh nhân` for variables, `// Thêm một bản ghi mới vào lịch sử khám bệnh` for methods, and `// Hiển thị thông tin chi tiết của cuộc hẹn` for output functions to improve readability."
