@@ -86,11 +86,3 @@ class Users{
     Users(string n_user):name(n_user){}; 
 
 };
-
-
-
-int main(){
-    vector<MediaItem>v;
-
-
-}
